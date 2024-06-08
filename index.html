@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sky cast</title>
+  </head>
+  <body>
+    <div class="weather-app">
+      <div class="wrapper">
+        <!-----------------First-Row---------------- -->
+        <div class="header">
+          <div>
+            <h2 class="city">Goa</h2>
+            <p class="date-time"></p>
+          </div>
+          <div class="search-wrapper">
+            <input class="search-input" placeholder="Type a city or location" />
+            <button class="search-btn">
+              <img src="icons/search.svg" alt="" />
+            </button>
+            <button class="location-btn">
+              <img src="icons/location-light.svg" alt="" />
+            </button>
+          </div>
+        </div>
+        <!-----------------Second-Row---------------- -->
+        <div class="forecast-wrapper">
+          <div class="temp-detail">
+            <h2 class="temperature">45</h2>
+            <div>
+              <div>
+                <button class="temp-unit-btn">°C</button>
+              </div>
+              <p class="weather-desc">overcast clouds</p>
+            </div>
+          </div>
+
+          <div class="forecast-left">
+            <img class="weather-icon-main"  src="icons/01d.svg" alt="" />
+
+            <div class="temp-stats">
+              <div>
+                <img src="icons/feels-like.svg" alt="" />
+                <p id="feels-like">Feels like: 34°C</p>
+              </div>
+              <div>
+                <img src="icons/humidity.svg" alt="" />
+                <p id="humidity">Humidity: 34°C</p>
+              </div>
+              <div>
+                <img src="icons/wind.svg" alt="" />
+                <p id="wind">Wind: 34°C</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-----------------Third-Row---------------- -->
+        <div class="days-wrapper">
+          <div class="weather-card">
+            <h4>Friday</h4>
+            <img src="icons/02d.svg" alt="" />
+            <h2>28° - 25°</h2>
+            <p>moderate rain.</p>
+          </div>
+          <div class="weather-card">
+            <h4>Friday</h4>
+            <img src="icons/01n.svg" alt="" />
+            <h2>28° - 25°</h2>
+            <p>moderate rain.</p>
+          </div>
+          <div class="weather-card">
+            <h4>Friday</h4>
+            <img src="icons/01n.svg" alt="" />
+            <h2>28° - 25°</h2>
+            <p>moderate rain.</p>
+          </div>
+          <div class="weather-card">
+            <h4>Friday</h4>
+            <img src="icons/01n.svg" alt="" />
+            <h2>28° - 25°</h2>
+            <p>moderate rain.</p>
+          </div>
+          <div class="weather-card">
+            <h4>Friday</h4>
+            <img src="icons/01n.svg" alt="" />
+            <h2>28° - 25°</h2>
+            <p>moderate rain.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
