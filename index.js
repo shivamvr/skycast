@@ -8,12 +8,12 @@ const getWeatherData = async (city, lat, lon) => {
         url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}&units=metric`;
     }
 
-    const res = await fetch(url)
-    const data = await res.json()
+    // const res = await fetch(url)
+    // const data = await res.json()
     const { lat: latitude, lon: longitude } = data.coord
     const apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=${key}&units=metric`;
-    const res2 = await fetch(apiUrl)
-    const forecastData = await res2.json()
+    // const res2 = await fetch(apiUrl)
+    // const forecastData = await res2.json()
 
     displayWeather(data, forecastData)
 }

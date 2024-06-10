@@ -9,6 +9,7 @@ body {
   background-image: url(images/fullpage-bg.png);
   background-size: cover;
   background-position: center;
+  min-height: 100vh;
 }
 button {
   cursor: pointer;
@@ -218,12 +219,45 @@ button {
   text-transform: uppercase;
 }
 
-
+@media screen and (max-width: 800px) {
+  .wrapper {
+    width: 85%;
+  }
+}
 @media screen and (max-width: 700px) {
-  .search-input{
+  .wrapper {
+    width: 90%;
+  }
+  .search-input {
     width: 200px;
   }
-  .search-input::placeholder{
+  .forecast-left {
+    flex-direction: column;
+  }
+  .search-input::placeholder {
     color: transparent;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .search-input {
+    width: 200px;
+  }
+  .search-wrapper {
+    padding: 0.5rem;
+    background: rgba(0, 128, 128, 0.271);
+    flex-wrap: wrap;
+    justify-content: right;
+    gap: 5px;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .search-input{
+    margin-left: -2rem;
+  }
+  .temp-detail {
+    flex-direction: column;
   }
 }
