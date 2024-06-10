@@ -245,7 +245,7 @@ button {
   }
   .search-wrapper {
     padding: 0.5rem;
-    background: rgba(0, 128, 128, 0.271);
+    /* background: rgba(0, 128, 128, 0.271); */
     flex-wrap: wrap;
     justify-content: right;
     gap: 5px;
